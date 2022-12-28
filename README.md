@@ -1,5 +1,7 @@
 # Geometry
 
+<img src="figures/tetrahedron_patch.png" width="100%">
+
 Unit Circle (Trigonometric)
 Unit Circle (Parametric)
 
