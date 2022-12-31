@@ -2,6 +2,7 @@
 
 <img src="figures/tetrahedron_patch.png" width="100%">
 <img src="figures/random_patch.png" width="100%">
+<img src="figures/cone.png" width="100%">
 
 Unit Circle (Trigonometric)
 Unit Circle (Parametric)
