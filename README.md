@@ -1,5 +1,8 @@
 # Geometry
 
+<img src="figures/sequential_atomic_1.png" width="100%">
+<img src="figures/sequential_atomic_2.png" width="100%">
+
 <img src="figures/tetrahedron_patch.png" width="100%">
 <img src="figures/random_patch.png" width="100%">
 <img src="figures/cone.png" width="100%">
