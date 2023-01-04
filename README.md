@@ -6,7 +6,25 @@ Defining colormaps Bézier surfaces has a lot of benefits. First, minimal data s
 <img src="figures/sequential_atomic_2.png" width="100%">
 <img src="figures/RGB_skew_atomic.png" width="100%">
 <img src="figures/RGB_bilinear_patch.png" width="100%">
-<img src="figures/tetrahedron_patch.png" width="100%">
+
+```python
+patch_1A = np.array(
+    [
+        [[0, 0, 0], [1, 0, 1]],
+        [[0, 1, 1], [1, 1, 0]],
+    ]
+)
+patch_1B = np.array(
+    [
+        [[1, 1, 1], [0, 1, 0]],
+        [[1, 0, 0], [0, 0, 1]],
+    ]
+)
+```
+<img src="figures/patch_1A.png" width="100%">
+<img src="figures/patch_1B.png" width="100%">
+<img src="figures/patch_1AB.png" width="100%">
+
 <img src="figures/random_patch.png" width="100%">
 <img src="figures/cone.png" width="100%">
 
