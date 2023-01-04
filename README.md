@@ -13,8 +13,6 @@ Defining colormaps Bézier surfaces has a lot of benefits. First, minimal data s
 Event Horizon Telescope used the `afmhot` colormap to visualize the M87 black hole
 
 <img src="figures/hot.png" width="100%">
-<img src="figures/Color_colormaps.png" width="100%">
-<img src="figures/Color_colormaps_2.png" width="100%">
 <img src="figures/parula_turbo_viridis_1.png" width="100%">
 <img src="figures/parula_turbo_viridis_2.png" width="100%">
 
