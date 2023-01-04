@@ -4,7 +4,8 @@ Defining colormaps Bézier surfaces has a lot of benefits. First, minimal data s
 
 <img src="figures/sequential_atomic_1.png" width="100%">
 <img src="figures/sequential_atomic_2.png" width="100%">
-
+<img src="figures/RGB_sknew_atomic.png" width="100%">
+<img src="figures/RGB_bilinear_patch.png" width="100%">
 <img src="figures/tetrahedron_patch.png" width="100%">
 <img src="figures/random_patch.png" width="100%">
 <img src="figures/cone.png" width="100%">
@@ -16,6 +17,8 @@ Event Horizon Telescope used the `afmhot` colormap to visualize the M87 black ho
 <img src="figures/Color_colormaps_2.png" width="100%">
 <img src="figures/parula_turbo_viridis_1.png" width="100%">
 <img src="figures/parula_turbo_viridis_2.png" width="100%">
+
+
 
 Unit Circle (Trigonometric)
 Unit Circle (Parametric)
