@@ -25,6 +25,25 @@ patch_1B = np.array(
 <img src="figures/patch_1B.png" width="100%">
 <img src="figures/patch_1AB.png" width="100%">
 
+```python
+surface_control_points = np.array(
+    [
+        [[0, 1, 1], [0, 0, 0]],
+        [[1, 0, 1], [1, 1, 0]],
+    ]
+)
+surface_control_points = np.array(
+    [
+        [[0, 1, 0], [1, 0, 0]],
+        [[0, 0, 1], [1, 1, 1]],
+    ]
+)
+```
+
+<img src="figures/patch_2A.png" width="100%">
+<img src="figures/patch_2B.png" width="100%">
+<img src="figures/patch_2AB.png" width="100%">
+
 <img src="figures/random_patch.png" width="100%">
 <img src="figures/cone.png" width="100%">
 
