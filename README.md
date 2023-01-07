@@ -4,7 +4,11 @@
 
 What if
 
-Well, there are a lot of "batteries included" benefits to this method. First, minimal data storage, because you only save the coordinates of the control points. Second, everything is altready parametrized, so rate of change within the colormap is always perceptually uniform at arbitrary interpolation resolutions. Third, this is a robust method to create bivariate colormaps, from simpler bilinear patches to highly complex Bézier high-degree patches (or mosaic of patches). Finally, manually-crafted colormaps can be approximated (and therefore perceptually improved) with this method.
+Well, there are a lot of "batteries included" benefits to this method. First, minimal data storage, because you only save the coordinates of the control points. Second, everything is parametrized in regular intervals, so rate of change within the colormap is always perceptually uniform. Third, interpolation between the start and end control points allow arbitray within-colormap resolution (the limit is at the ability of a physical display to display RGB values). Fourth, this is a robust method to create bivariate colormaps, from four-point bilinear patches to a highly complex surface or mosaic of surfaces. Finally, existing manually-crafted colormaps can be approximated with this method, and then edited to increase smoothness and perceptual uniformity.
+
+Bivariate chloropleth colormap and RGB bilinear patch
+
+<img src="figures/bivariate_choropleth.png" width="100%"><img src="figures/bivariate_map.jpg" width="100%">
 
 <img src="figures/color_1A.png" width="100%"><img src="figures/color_2A.png" width="50%"><img src="figures/color_3A.png" width="50%">
 <img src="figures/color_1B.png" width="100%"><img src="figures/color_2B.png" width="50%"><img src="figures/color_3B.png" width="50%">
@@ -58,10 +62,6 @@ surface_control_points = np.array(
 ```
 
 <img src="figures/patch_3AB.png" width="100%"><img src="figures/patch_3A.png" width="50%"><img src="figures/patch_3B.png" width="50%">
-
-Bivariate chloropleth colormap and RGB bilinear patch
-
-<img src="figures/bivariate_choropleth.png" width="50%"><img src="figures/bivariate_map.jpg" width="50%">
 
 Event Horizon Telescope used the `afmhot` colormap to visualize the M87 black hole
 
