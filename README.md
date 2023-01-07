@@ -2,11 +2,11 @@
 
 <img src="figures/sequential_atomic_2.png" width="50%"><img src="figures/RGB_skew_atomic.png" width="50%">
 
-What if
+What if Bézier surfaces define colormaps within the RGB cube?
 
 Well, there are a lot of "batteries included" benefits to this method. First, minimal data storage, because you only save the coordinates of the control points. Second, everything is parametrized in regular intervals, so rate of change within the colormap is always perceptually uniform. Third, interpolation between the start and end control points allow arbitray within-colormap resolution (the limit is at the ability of a physical display to display RGB values). Fourth, this is a robust method to create bivariate colormaps, from four-point bilinear patches to a highly complex surface or mosaic of surfaces. Finally, existing manually-crafted colormaps can be approximated with this method, and then edited to increase smoothness and perceptual uniformity.
 
-Bivariate chloropleth colormap and RGB bilinear patch
+Let's look at this example of a Bézier bilinear patch approximating and interpolating an example bivariate chloropleth colormap (source: https://cartographicperspectives.org/index.php/journal/article/view/1538/1819)
 
 <img src="figures/bivariate_choropleth.png" width="100%"><img src="figures/bivariate_map.jpg" width="100%">
 
