@@ -3,16 +3,16 @@
 Defining colormaps Bézier surfaces has a lot of benefits. First, minimal data storage, because you only save the coordinates of the control points. Second, the are altready parametrized, so rate of change within the colormap will be perceptually uniform. Third, manually-crafted colormaps can be approximated (and therefore perceptually improved) with this method.
 
 
-<img src="figures/sequential_atomic_2.png" width="100%">
-<img src="figures/RGB_skew_atomic.png" width="100%">
+<img src="figures/sequential_atomic_2.png" width="50%">
+<img src="figures/RGB_skew_atomic.png" width="50%">
 
-<img src="figures/color_1A.png" width="100%">
-<img src="figures/color_2A.png" width="100%">
-<img src="figures/color_3A.png" width="100%">
+<img src="figures/color_1A.png" width="33%">
+<img src="figures/color_2A.png" width="33%">
+<img src="figures/color_3A.png" width="33%">
 
-<img src="figures/color_1B.png" width="100%">
-<img src="figures/color_2B.png" width="100%">
-<img src="figures/color_3B.png" width="100%">
+<img src="figures/color_1B.png" width="33%">
+<img src="figures/color_2B.png" width="33%">
+<img src="figures/color_3B.png" width="33%">
 
 ```python
 patch_1A = np.array(
