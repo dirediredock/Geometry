@@ -37,8 +37,7 @@ surface_control_points = np.array(
     ]
 )
 ```
-<img src="figures/patch_2AB.png" width="100%"><img src="figures/patch_2A.png" width="50%"><img src="figures/patch_2
-    B.png" width="50%">
+<img src="figures/patch_2AB.png" width="100%"><img src="figures/patch_2A.png" width="50%"><img src="figures/patch_2B.png" width="50%">
 
 ```python
 surface_control_points = np.array(
@@ -57,6 +56,11 @@ surface_control_points = np.array(
 
 <img src="figures/patch_3AB.png" width="100%"><img src="figures/patch_3A.png" width="50%"><img src="figures/patch_3B.png" width="50%">
 
+Bivariate chloropleth colormap and RGB bilinear patch
+
+<img src="figures/bivariate_map.jpg" width="100%">
+<img src="figures/bivariate.png" width="100%">
+
 <img src="figures/random_patch.png" width="100%">
 <img src="figures/cone.png" width="100%">
 
@@ -66,10 +70,6 @@ Event Horizon Telescope used the `afmhot` colormap to visualize the M87 black ho
 <img src="figures/turbo_spline_2.png" width="100%">
 <img src="figures/turbo_spline_1.png" width="100%">
 
-Bivariate chloropleth colormap and RGB bilinear patch
-
-<img src="figures/bivariate_map.jpg" width="100%">
-<img src="figures/bivariate.png" width="100%">
 
 <img src="figures/parula_turbo_viridis_1.png" width="100%">
 <img src="figures/parula_turbo_viridis_2.png" width="100%">
