@@ -8,7 +8,9 @@ Well, there are a lot of "batteries included" benefits to this method. First, mi
 
 Let's look at this example of a Bézier bilinear patch approximating and interpolating an example bivariate chloropleth colormap (source: https://cartographicperspectives.org/index.php/journal/article/view/1538/1819)
 
-<img src="figures/bivariate_choropleth.png" width="100%"><img src="figures/bivariate_map.jpg" width="100%">
+<img src="figures/bivariate_map.jpg" width="100%"><img src="figures/bivariate_choropleth.png" width="100%">
+
+The bivariate colormap above is a low-torsion bilinear patch in RGB space. Below are the six possible bilinear patches that have maximum torsion (and therefore the most comprehensive color ranges within RGB space).
 
 <img src="figures/color_1A.png" width="100%"><img src="figures/color_2A.png" width="50%"><img src="figures/color_3A.png" width="50%">
 <img src="figures/color_1B.png" width="100%"><img src="figures/color_2B.png" width="50%"><img src="figures/color_3B.png" width="50%">
