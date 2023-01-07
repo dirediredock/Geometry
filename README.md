@@ -9,9 +9,8 @@ Defining colormaps Bézier surfaces has a lot of benefits. First, minimal data s
 <img src="figures/color_2A.png" width="33%">
 <img src="figures/color_3A.png" width="33%">
 
-<img src="figures/color_1B.png" width="33%">
-<img src="figures/color_2B.png" width="33%">
-<img src="figures/color_3B.png" width="33%">
+<img src="figures/color_1B.png" width="100%">
+<img src="figures/color_2B.png" width="50%"><img src="figures/color_3B.png" width="50%">
 
 ```python
 patch_1A = np.array(
