@@ -28,11 +28,6 @@ patch_1B = np.array(
         [[1, 0, 0], [0, 0, 1]],
     ]
 )
-```
-
-<img src="figures/patch_1AB.png" width="100%"><img src="figures/patch_1A.png" width="50%"><img src="figures/patch_1B.png" width="50%">
-
-```python
 surface_control_points = np.array(
     [
         [[0, 1, 1], [0, 0, 0]],
@@ -45,10 +40,6 @@ surface_control_points = np.array(
         [[0, 0, 1], [1, 1, 1]],
     ]
 )
-```
-<img src="figures/patch_2AB.png" width="100%"><img src="figures/patch_2A.png" width="50%"><img src="figures/patch_2B.png" width="50%">
-
-```python
 surface_control_points = np.array(
     [
         [[0, 0, 0], [1, 0, 1]],
@@ -63,6 +54,8 @@ surface_control_points = np.array(
 )
 ```
 
+<img src="figures/patch_1AB.png" width="100%"><img src="figures/patch_1A.png" width="50%"><img src="figures/patch_1B.png" width="50%">
+<img src="figures/patch_2AB.png" width="100%"><img src="figures/patch_2A.png" width="50%"><img src="figures/patch_2B.png" width="50%">
 <img src="figures/patch_3AB.png" width="100%"><img src="figures/patch_3A.png" width="50%"><img src="figures/patch_3B.png" width="50%">
 
 Event Horizon Telescope used the `afmhot` colormap to visualize the M87 black hole
