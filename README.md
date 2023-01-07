@@ -1,10 +1,8 @@
 # RGB_ColorSpline_Cube
 
-Defining colormaps Bézier surfaces has a lot of benefits. First, minimal data storage, because you only save the coordinates of the control points. Second, the are altready parametrized, so rate of change within the colormap will be perceptually uniform. Third, manually-crafted colormaps can be approximated (and therefore perceptually improved) with this method.
-
+Defining colormaps through Bézier surfaces has a lot of benefits. First, minimal data storage, because you only save the coordinates of the control points. Second, everything is altready parametrized, so rate of change within the colormap is always perceptually uniform at arbitrary interpolation resolutions. Third, this is a robust method to create bivariate colormaps, from simpler bilinear patches to highly complex Bézier high-degree patches (or mosaic of patches). Finally, manually-crafted colormaps can be approximated (and therefore perceptually improved) with this method.
 
 <img src="figures/sequential_atomic_2.png" width="50%"><img src="figures/RGB_skew_atomic.png" width="50%">
-
 <img src="figures/color_1A.png" width="100%"><img src="figures/color_2A.png" width="50%"><img src="figures/color_3A.png" width="50%">
 <img src="figures/color_1B.png" width="100%"><img src="figures/color_2B.png" width="50%"><img src="figures/color_3B.png" width="50%">
 
