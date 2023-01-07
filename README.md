@@ -76,6 +76,9 @@ surface_control_points = np.array(
 Event Horizon Telescope used the `afmhot` colormap to visualize the M87 black hole
 
 <img src="figures/hot.png" width="100%">
+<img src="figures/turbo_spline_2.png" width="100%">
+<img src="figures/turbo_spline_1.png" width="100%">
+
 <img src="figures/parula_turbo_viridis_1.png" width="100%">
 <img src="figures/parula_turbo_viridis_2.png" width="100%">
 <img src="figures/sequential_atomic_1.png" width="100%">
