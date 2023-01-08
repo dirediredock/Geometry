@@ -23,32 +23,49 @@ def colorspline(colormap, dotted=False):
                 G[i : i + 2],
                 B[i : i + 2],
                 color=colormap[i],
-                linewidth=7,
-                # solid_capstyle="round",
+                linewidth=8,
+                solid_capstyle="round",
             )
 
 
-surface_control_points = np.array(
+# template = parula_500
+template = plt.cm.turbo(np.linspace(0, 1, 100))
+
+X = [row[0] for row in template]
+Y = [row[1] for row in template]
+Z = [row[2] for row in template]
+
+control_points = np.array(
     [
-        [[0, 0, 0], [1, 0, 1]],
-        [[0, 1, 1], [1, 1, 0]],
+        [
+            [X[0], Y[0], Z[0]],
+            [0.5, 0, 1],
+            [0, 1, 1],
+            [0, 1, 1],
+            [0, 1, 0],
+            [1, 1, 0.5],
+            [1, 1, 0.5],
+            [1, 1, 0],
+            [1, 0, 0],
+            [X[-1], Y[-1], Z[-1]],
+        ],
     ]
 )
-surface = surface_Bezier(surface_control_points, steps_u=50, steps_v=50)
+
+cubespline = surface_Bezier(control_points, steps_u=1, steps_v=70)
 
 fig = plt.figure(figsize=(10, 10))
 ax = fig.add_subplot(111, projection="3d", proj_type="ortho")
 
-for row in surface_control_points:
+for row in control_points:
     ax.plot(row[:, 0], row[:, 1], row[:, 2], ".-k", linewidth=0.75)
-for row in surface_control_points.transpose(1, 0, 2):
+for row in control_points.transpose(1, 0, 2):
     ax.plot(row[:, 0], row[:, 1], row[:, 2], ".-k", linewidth=0.75)
 
-# for step_u in reversed(surface):
-#     colorspline(step_u)
-
-for step_u in surface:
-    colorspline(step_u)
+colorspline(template)
+colorspline(cubespline[0], dotted=True)
+colorspline(cubespline[0], dotted=True)
+colorspline(cubespline[0], dotted=True)
 
 ax.xaxis.set_pane_color((1.0, 1.0, 1.0, 0.0))
 ax.yaxis.set_pane_color((1.0, 1.0, 1.0, 0.0))
@@ -62,6 +79,7 @@ ax.set_zticks([0, 1])
 ax.set_xlabel("R (x)")
 ax.set_ylabel("G (y)")
 ax.set_zlabel("B (z)")
-ax.view_init(azim=-105, elev=-25)
+# ax.view_init(azim=45, elev=35)
+ax.view_init(azim=-124, elev=16)
 ax.set_box_aspect((1, 1, 1))
 plt.show()

@@ -28,11 +28,26 @@ def colorspline(colormap, dotted=False):
             )
 
 
-surface_control_points = np.array(
-    [
-        [[0, 0, 0], [1, 0, 1]],
-        [[0, 1, 1], [1, 1, 0]],
-    ]
+bivariate_map = np.divide(
+    np.array(
+        [
+            [[1, 149, 255], [1, 106, 184], [1, 56, 103], [1, 1, 1]],
+            [[100, 186, 255], [101, 147, 184], [103, 103, 103], [104, 55, 1]],
+            [[185, 220, 255], [184, 184, 184], [185, 145, 102], [188, 104, 1]],
+            [[255, 255, 255], [253, 219, 183], [255, 185, 103], [255, 148, 1]],
+        ],
+    ),
+    255,
+)
+
+surface_control_points = np.divide(
+    np.array(
+        [
+            [[1, 149, 255], [1, 1, 1]],
+            [[255, 255, 255], [255, 148, 1]],
+        ]
+    ),
+    255,
 )
 surface = surface_Bezier(surface_control_points, steps_u=50, steps_v=50)
 
@@ -44,11 +59,20 @@ for row in surface_control_points:
 for row in surface_control_points.transpose(1, 0, 2):
     ax.plot(row[:, 0], row[:, 1], row[:, 2], ".-k", linewidth=0.75)
 
-# for step_u in reversed(surface):
-#     colorspline(step_u)
-
 for step_u in surface:
     colorspline(step_u)
+
+for row in bivariate_map:
+    for triplet in row:
+        ax.scatter(
+            triplet[0],
+            triplet[1],
+            triplet[2],
+            s=500,
+            color=triplet,
+            edgecolors="k",
+        )
+
 
 ax.xaxis.set_pane_color((1.0, 1.0, 1.0, 0.0))
 ax.yaxis.set_pane_color((1.0, 1.0, 1.0, 0.0))
@@ -62,6 +86,6 @@ ax.set_zticks([0, 1])
 ax.set_xlabel("R (x)")
 ax.set_ylabel("G (y)")
 ax.set_zlabel("B (z)")
-ax.view_init(azim=-105, elev=-25)
+ax.view_init(azim=130, elev=-40)
 ax.set_box_aspect((1, 1, 1))
 plt.show()
