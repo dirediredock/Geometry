@@ -1,6 +1,6 @@
 # RGB_ColorSpline_Cube
 
-<img src="figures/sequential_atomic_2.png" width="50%"><img src="figures/RGB_skew_atomic.png" width="50%">
+<img src="figures/sequential_atomic_2.png" width="50%"><img src="figures/RGB_skew_atomic.png" width="50%"><img src="figures/R_scan.png" width="33%"><img src="figures/G_scan.png" width="33%"><img src="figures/B_scan.png" width="33%">
 
 What if Bézier surfaces define colormaps within the RGB cube?
 
