@@ -51,6 +51,13 @@ surface_control_points = np.divide(
 )
 surface = surface_Bezier(surface_control_points, steps_u=50, steps_v=50)
 
+# flat_bilinear = np.array(
+#     [
+#         [[0, 0.5, 1], [0, 0, 0]],
+#         [[1, 1, 1], [1, 0.5, 0]],
+#     ]
+# )
+
 fig = plt.figure(figsize=(10, 10))
 ax = fig.add_subplot(111, projection="3d", proj_type="ortho")
 
@@ -72,7 +79,6 @@ for row in bivariate_map:
             color=triplet,
             edgecolors="k",
         )
-
 
 ax.xaxis.set_pane_color((1.0, 1.0, 1.0, 0.0))
 ax.yaxis.set_pane_color((1.0, 1.0, 1.0, 0.0))
