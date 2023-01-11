@@ -79,6 +79,12 @@ Other surfaces
 <img src="figures/random_patch.png" width="100%">
 <img src="figures/cone.png" width="100%">
 
+Sampling the spline surface into a flat matrix to generate an image.
+
+<img src="figures/colorsurface_spline_2.png" width="50%"><img src="figures/colorsurface_result_2.png" width="50%">
+<img src="figures/colorsurface_spline_1.png" width="50%"><img src="figures/colorsurface_result_1.png" width="50%">
+
+
 ---
 
 Unit Circle (Trigonometric)
