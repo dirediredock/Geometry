@@ -83,6 +83,7 @@ Sampling the spline surface into a flat matrix to generate an image.
 
 <img src="figures/colorsurface0_spline.png" width="50%"><img src="figures/colorsurface0_result.png" width="50%">
 <img src="figures/colorsurface5_spline.png" width="50%"><img src="figures/colorsurface5_result.png" width="50%">
+<img src="figures/colorsurface6_spline.png" width="50%"><img src="figures/colorsurface6_result.png" width="50%">
 <img src="figures/colorsurface1_spline.png" width="50%"><img src="figures/colorsurface1_result.png" width="50%">
 <img src="figures/colorsurface2_spline.png" width="50%"><img src="figures/colorsurface2_result.png" width="50%">
 <img src="figures/colorsurface3_spline.png" width="50%"><img src="figures/colorsurface3_result.png" width="50%">
