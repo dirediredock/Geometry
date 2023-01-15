@@ -72,7 +72,7 @@ Celebrity colormaps (`parula`, `viridis`, `turbo`) within the RGB cube
 
 Event Horizon Telescope used the `afmhot` colormap to visualize the M87 black hole
 
-<img src="figures/hot.png" width="100%">
+<img src="figures/hot.png" width="100%"><img src="figures/afmhot_10u.png" width="50%"><img src="figures/afmhot_10u_color.png" width="50%"><img src="figures/afmhot_spline.png" width="50%"><img src="figures/afmhot_spline_color.png" width="50%">
 
 Other surfaces 
 
